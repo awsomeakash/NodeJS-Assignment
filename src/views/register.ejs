@@ -1,0 +1,38 @@
+<!-- views/registration.ejs -->
+<%- include('layout', { pageTitle: 'Registration Page', body: `
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login12.css">
+    <title>Create Account</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container ">
+          <form action="/auth/register" method="post">
+                <h1>Create Account</h1>
+                <input type="email" placeholder="email" name="email" />
+                <input type="password" placeholder="Password" name="password" />
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <!-- Add this div for the alert -->
+        <div id="registrationAlert"></div>
+        <!-- ... other content ... -->
+    </div>
+
+    <footer>
+        <p>
+            Created with <i class="fa fa-heart"></i> by
+            <a target="_blank" href="#">Akash</a>
+        </p>
+    </footer>
+    <script src="/js/registration.js"></script>
+</body>
+</html>
+` }) %>
