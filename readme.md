@@ -1,6 +1,5 @@
-# Project Name
+# Node Assignment
 
-Description of your project.
 
 ## Table of Contents
 
