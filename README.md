@@ -33,6 +33,8 @@ Description of your project.
 **Configuration:**
 Create a .env file in the root directory and add the necessary configuration:
 
+**Application run command**
+```npm run dev``` - If you are using nodemon  or as the entry point is ```app.js ``` you can try ```node app.js```
 
 ```PORT=3000```
 ```MONGODB_URI=mongodb://localhost:27017/your-database-name```
